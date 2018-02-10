@@ -5,7 +5,6 @@ author: "Jo-fai Chow - joe@h2o.ai"
 date: "10-Feb-2018"
 output:
   xaringan::moon_reader:
-    chakra: libs/remark-latest.min.js
     lib_dir: libs
     css: [default, default-fonts]
     nature:
