@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Driving the Driverless AI</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Jo-fai Chow - joe@h2o.ai" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Driving the Driverless AI
+## An Exercise based on Kaggle Competition
+### Jo-fai Chow - <a href="mailto:joe@h2o.ai">joe@h2o.ai</a>
+### 10-Feb-2018
+
+---
+
+
+
+
+# Agenda
+
+- Kaggle Competition and Dataset
+
+- Baseline Model
+
+- Kaggle Submission
+
+- Using Driverless AI
+    - AWS
+    - Data Visualisation
+    - Making Predictions
+
+- **Goal**: Beating the Baseline without Manual Feature Engieering
+
+- Beyond this Exercise
+
+---
+
+class: center, middle
+
+# Kaggle Competition &amp; Dataset
+
+## House Prices: Advanced Regression Techniques
+
+https://www.kaggle.com/c/house-prices-advanced-regression-techniques
+
+---
+
+class: inverse, center, middle
+
+![about](images/01_about_comp.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/02_about_comp.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/03_about_comp.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/04_about_comp.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/05_about_comp.png)
+
+---
+
+# Dataset
+
+- Source: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
+- ./data/
+    - train.csv
+    - test.csv
+    - sample_submission.csv
+
+---
+
+class: inverse, center, middle
+
+![about](images/06_data.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/07_data.png)
+
+---
+
+# Key to Success
+
+.pull-left[
+## Data Science Skills
+- Creative Feature Engineering
+- Advanced Regression Techniques
+- Hyperparameters Tuning
+- Models Stacking
+- (months and years of practice)
+
+
+## Domain Knowledge
+- Feature Engineering
+]
+
+
+--
+
+.pull-right[
+## Shortcuts
+- Automatic Machine Learning
+- H2O Driverless AI
+]
+
+---
+
+# Evaluation
+
+## Root Mean Squared Logarithmic Error (RMSLE)
+
+**Note**: instead of RMSE as described on Evaluation page
+
+Reference: https://www.slideshare.net/KhorSoonHin/rmsle-cost-function
+
+---
+
+class: inverse, center, middle
+
+![about](images/08_RMSLE.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/09_RMSLE.png)
+
+---
+
+class: center, middle
+
+# Baseline Model
+
+## H2O Random Forest with Default Settings &amp; 5-fold Cross-Validation
+
+https://github.com/woobe/dai_oxford/blob/master/baseline.ipynb
+
+
+---
+
+class: inverse, center, middle
+
+![about](images/10_baseline.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/11_baseline.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/12_baseline.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/13_baseline.png)
+
+---
+
+class: center, middle
+
+# Kaggle Submission
+
+https://www.kaggle.com/c/house-prices-advanced-regression-techniques/submit
+
+---
+
+class: inverse, center, middle
+
+![about](images/14_kaggle_sub.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/15_kaggle_sub.png)
+
+---
+
+# Baseline Model Summary
+
+### RMSLE (5-Fold CV): 0.13963
+### RMSLE (Kaggle Leaderboard): 0.14421
+### Next: Beat the baseline score using Driverless AI
+
+---
+
+
+class: center, middle
+
+# Using Driverless AI
+
+## Community AMI on AWS
+
+---
+
+class: inverse, center, middle
+
+![about](images/16_AWS.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/17_AWS.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/18_AWS.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/19_AWS.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/20_AWS.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/21_AWS.png)
+
+---
+
+class: inverse, center, middle
+
+### I will give you the IP address
+### Username: iot
+### Password: iot
+
+![about](images/22_DAI.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/23_DAI.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/24_DAI.png)
+
+---
+
+class: center, middle
+
+# Using Driverless AI
+
+## Auto Visualisation
+
+---
+
+class: inverse, center, middle
+
+![about](images/25_DAI.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/26_DAI.png)
+
+---
+
+class: inverse, center, middle
+
+Click on dataset -&gt; "Visualize"
+
+![about](images/27_DAI.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/28_DAI.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/29_DAI.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/30_DAI.png)
+
+---
+
+class: center, middle
+
+# Using Driverless AI
+
+## Making Predictions &amp; Beating the Baseline
+
+---
+
+class: inverse, center, middle
+
+Click on dataset -&gt; "Predict"
+
+![about](images/31_DAI.png)
+
+---
+
+class: inverse, center, middle
+
+Drop column "id"
+
+![about](images/32_DAI.png)
+
+---
+
+class: inverse, middle
+
+- Add "Test" dataset
+- Select "SalePrice" as target
+- Time Column "OFF"
+- Settings: Accuracy 5, Time 1, Interpretability 1 (for a quick run)
+- Scorer: "RMSLE"
+- "Launch Experiment"
+
+![about](images/33_DAI.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/34_DAI.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/35_DAI.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/36_DAI.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/37_DAI.png)
+
+---
+
+class: center, middle
+
+# Driverless AI
+
+## Reformat "test_preds.csv" and create Kaggle submission
+
+https://github.com/woobe/dai_oxford/blob/master/create_dai_sub.ipynb
+
+---
+
+class: inverse, center, middle
+
+![about](images/38_DAI.png)
+
+---
+
+class: inverse, center, middle
+
+![about](images/39_DAI.png)
+
+---
+
+# Summary
+
+## Baseline Model:
+
+- RMSLE (5-Fold CV): 0.13963
+- RMSLE (Kaggle Leaderboard): 0.14421
+
+## Driverless AI Quick Run (5-1-1):
+
+- RMSLE (3-Fold CV): 0.12754
+- RMSLE (Kaggle Leaderboard): 0.12709
+
+(Now it is your turn to improve this score)
+
+---
+
+# Beyond this Exercise
+
+- Your own feature engineering + Driverless AI
+- Kaggle Kernels / Discussion
+- Try different algorithms
+
+
+---
+
+class: inverse, center, middle
+
+# Thanks!
+
+## Contact: Slack / joe@h2o.ai
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+    </textarea>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:10"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
